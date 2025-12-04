@@ -1,0 +1,10 @@
+#frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frm input {
+    width: 20%;
+}
