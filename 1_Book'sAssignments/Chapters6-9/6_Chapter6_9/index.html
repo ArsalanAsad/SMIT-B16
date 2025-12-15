@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Enter Subject Names & Marks</h2>
+
+<label>Subject 1: </label>
+<input type="text" id="sub1"><br><br>
+
+<label>Subject 2: </label>
+<input type="text" id="sub2"><br><br>
+
+<label>Subject 3: </label>
+<input type="text" id="sub3"><br><br>
+
+<label>Marks for Subject 1: </label>
+<input type="number" id="m1"><br><br>
+
+<label>Marks for Subject 2: </label>
+<input type="number" id="m2"><br><br>
+
+<label>Marks for Subject 3: </label>
+<input type="number" id="m3"><br><br>
+
+<button onclick="showResult()">Generate Result</button>
+
+<br><br>
+
+<table id="resultTable" style="display:none;">
+    <tr>
+        <th>Subject</th>
+        <th>Total Marks</th>
+        <th>Obtained Marks</th>
+        <th>Percentage</th>
+    </tr>
+
+    <tr>
+        <td id="s1"></td>
+        <td>100</td>
+        <td id="o1"></td>
+        <td id="p1"></td>
+    </tr>
+
+    <tr>
+        <td id="s2"></td>
+        <td>100</td>
+        <td id="o2"></td>
+        <td id="p2"></td>
+    </tr>
+
+    <tr>
+        <td id="s3"></td>
+        <td>100</td>
+        <td id="o3"></td>
+        <td id="p3"></td>
+    </tr>
+
+    <tr class="total-row">
+        <td></td>
+        <td id="totMarks"></td>
+        <td id="totObt"></td>
+        <td id="totPerc"></td>
+    </tr>
+</table>
+
+<script src="app.js"></script>
+
+</body>
+</html>
